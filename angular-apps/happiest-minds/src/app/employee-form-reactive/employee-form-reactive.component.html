@@ -1,0 +1,38 @@
+<h2>Input Employee Details</h2>
+<div>
+<form (submit)="saveEmployee(employeeForm.value)" [formGroup]="employeeForm">
+    <div class="form-group">
+        <label for="employeeId">Employee ID</label>
+        <input formControlName="employeeId" class="form-control" type="text" >
+        <small *ngIf="employeeForm.get('employeeId')?.touched && employeeForm.get('employeeId')?.errors?.['forbiddenkeyword']">ID already taken</small>
+    </div>
+    <div class="form-group">
+        <label for="employeeName">Employee Name</label>
+        <input formControlName="employeeName" class="form-control" type="text" >
+        <p *ngIf="employeeForm.get('employeeName')?.touched" class="text-danger">
+         <small *ngIf="employeeForm.get('employeeName')?.errors?.['required']">Employee Name can not be blank</small>
+         <small *ngIf="employeeForm.get('employeeName')?.errors?.['pattern']">Employee Name must contain only letters</small>
+         <small *ngIf="employeeForm.get('employeeName')?.errors?.['forbiddenkeyword']">This Name is not alllowed</small>
+        </p>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input formControlName="email" class="form-control" type="email" >
+    </div>
+    <div formGroupName="address">
+        <div class="form-group">
+            <label for="area">Area</label>
+            <input type="text" formControlName="area" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" formControlName="city" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="zipCode">Zip Code</label>
+            <input type="number" formControlName="zipCode" class="form-control">
+        </div>
+    </div>
+    <button [disabled]="employeeForm.invalid" class="btn btn-primary">Register Employee</button>
+</form>
+</div>

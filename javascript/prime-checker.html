@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script src="prime.js"></script>
+    <script>
+        function checkPrime(){
+            let num = parseInt(document.getElementById("num1").value);
+            let output = document.getElementById("output");
+            if(isPrime(num)){
+                output.innerHTML=num+" is Prime";
+            }
+            else{
+                output.innerHTML=num+" is Not Prime";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label for="num1">Number</label>
+    <input type="text" id="num1">
+    <button onclick="checkPrime()">Check</button>
+    <p id="output">Enter a number to check if it is prime or not</p>
+</body>
+</html>

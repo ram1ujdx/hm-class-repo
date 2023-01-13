@@ -1,0 +1,66 @@
+body{
+    /* background-image: url("images/flower-2.jpg"); */
+}
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: darkgreen;
+}
+a:visited{
+    color: black;
+}
+a:active{
+
+}
+a:hover{
+    
+}
+
+li{
+    display: inline-block;
+    padding: 15px;
+
+}
+ul{
+    list-style-type: none;
+    background-color: gray;
+}
+
+#p-text{
+    text-align: justify;
+    text-decoration: underline;
+    font-size: larger;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: blue;
+}
+
+#div1{
+    border: 1px solid red;
+    color:cornflowerblue;
+    /* background-image: url("images/flower-1.jpg"); */
+    opacity: 80%;
+}
+#p1{
+    background-color: rgb(255, 0, 0); 
+    opacity: 50%;   
+}
+
+/* p{
+    display: inline-block;
+    padding: 30px;
+    height: 50%;
+    width: 50%;
+    min-height: 300px;
+    min-width: 400px;
+    max-width: 500px;
+    max-height: 400px;
+} */
+
+img{
+    height: 200px;
+    width: 200px;
+}

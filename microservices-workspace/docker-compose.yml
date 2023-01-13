@@ -1,0 +1,85 @@
+version: '3.7'
+services: 
+    mysql:
+        image: mysql
+        ports:
+         - "3306:3306"
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: hm_db
+        networks: 
+            - airlines-app-network
+
+
+    airlines-eureka-server:
+        image: airlines-eureka-server
+        ports: 
+            - "8761:8761"
+        networks: 
+            - airlines-app-network
+
+    airlines-auth-service:
+        image: airlines-auth-service
+        ports: 
+            - "8800:8800"
+        environment: 
+            EUREKA_HOST: airlines-eureka-server
+            MYSQL_HOST: mysql
+            MYSQL_PORT: 3306
+            MYSQL_DB: hm_db
+            MYSQL_USER: root
+            MYSQL_PASSWORD: password
+        depends_on: 
+            - airlines-eureka-server
+            - mysql
+        networks: 
+            - airlines-app-network
+
+    
+    airlines-info-service:
+        image: airlines-info-service
+        ports: 
+            - "8100:8100"
+        environment: 
+            EUREKA_HOST: airlines-eureka-server
+        depends_on: 
+            - airlines-eureka-server
+        networks: 
+            - airlines-app-network
+
+    airlines-coupon-discounts-service:
+        image: airlines-coupon-discounts-service
+        ports: 
+            - "8200:8200"
+        environment: 
+            EUREKA_HOST: airlines-eureka-server
+        depends_on: 
+            - airlines-eureka-server
+        networks: 
+            - airlines-app-network
+
+    airlines-booking-service:
+        image: airlines-booking-service
+        ports: 
+            - "8000:8000"
+        environment: 
+            EUREKA_HOST: airlines-eureka-server
+        depends_on: 
+            - airlines-eureka-server
+        networks: 
+            - airlines-app-network
+        
+    airlines-api-gateway:
+        image: airlines-api-gateway
+        ports: 
+            - "8888:8888"
+        environment: 
+            EUREKA_HOST: airlines-eureka-server
+        depends_on: 
+            - airlines-eureka-server
+        networks: 
+            - airlines-app-network
+
+networks: 
+    airlines-app-network:

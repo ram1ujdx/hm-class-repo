@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<script>
+    function updateBtnText(){
+       let op = document.getElementById("op").value;
+       let btn = document.getElementById("btn");
+       switch(op){
+        case "+":
+            btn.innerHTML='Add';
+            break;
+        case "-":
+            btn.innerHTML='Subtract';
+            break;
+       }
+    }
+</script>
+
+</head>
+<body>
+    
+    <select id="op" onchange="updateBtnText()">
+        <option value="+">+</option>
+        <option value="-">-</option>
+    </select>
+
+    <button id="btn">Add</button>
+
+</body>
+</html>

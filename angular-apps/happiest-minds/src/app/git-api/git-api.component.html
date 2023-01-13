@@ -1,0 +1,9 @@
+<input type="text" placeholder="Input Username" #t_username>
+<button (click)="fetchGitUserInfo(t_username.value)">Fetch Info</button>
+
+<div *ngIf="user">
+    <p>Name : {{user.name}}</p>
+    <p>Public Repositories : {{user.public_repos}}</p>
+    <p>Followers : {{user.followers}}</p>
+    <img src="{{user.avatar_url}}" height="200px" width="200px">
+</div>

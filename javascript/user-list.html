@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function addUser(){
+            let username = document.getElementById("username").value;
+            let userlist = document.getElementById("userlist");
+            userlist.innerHTML += "<li>"+username+"</li>"
+            return false;
+        }
+    </script>
+</head>
+<body>
+<form onsubmit="return addUser()">    
+Enter a name <input type="text" id="username">
+<button type="submit">Add to List</button>
+</form>
+<h3>List of User</h3>
+<ul id="userlist">
+   
+</ul>
+
+</body>
+</html>

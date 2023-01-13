@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        let images=['flower-1.jpg','flower-2.jpg','tiger.jpg','sq.jpg','rbt.jpg'];
+        let img = document.getElementById('img');
+        let index=0;
+        img.src=`images/${images[index]}`;
+        updateView();
+        
+        function next(){
+            index++;
+            img.src=`images/${images[index]}`;
+            updateView();
+            
+        }
+        function previous(){
+            index--;
+            img.src=`images/${images[index]}`;
+            updateView();
+        }
+    
+        function updateView(){
+            let prev = document.getElementById("prevBtn");
+            let next = document.getElementById("nextBtn");
+            next.disabled = index >= images.length-1;
+            prev.disabled= index <= 0;
+        }
+    
+    
+    </script>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <td colspan="2"><img width="400px" height="400px" id="img"></td>
+        </tr>
+        <tr >
+            <td><button id="prevBtn" onclick="previous()">Previous</button></td>
+            <td><button id="nextBtn" onclick="next()">Next</button></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

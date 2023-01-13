@@ -1,0 +1,21 @@
+header{
+    background-color: grey;
+    min-height: 150px;
+}
+footer{
+    background-color: darkcyan;
+    min-height: 100px;
+}
+
+aside,section,article{
+    min-height: 400px;
+}
+
+aside{
+    background-color: darkgray;
+}
+
+article{
+    background-color: darkseagreen;
+}
+

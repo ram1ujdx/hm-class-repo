@@ -1,0 +1,10 @@
+{
+    "menus":[
+        {
+            "id":100101,
+            "itemName":"Pizza",
+            "price":300,
+            "category":"non-veg"
+        }
+    ]
+}

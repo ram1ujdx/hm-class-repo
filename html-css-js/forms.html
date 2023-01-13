@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h2>Employee Details :</h2>
+    <form action="hello.html" method="post">
+    <div>
+       <label class="lb1" for="employeeId">Employee ID</label>
+       <input type="number" value="100010" required readonly name="employeeId" placeholder="Input Employee ID" id="employeeId">
+    </div>
+    <div>
+        <label class="lb2" for="employeeName">Name</label>
+        <input type="text" name="employeeName" id="employeeName">
+    </div>
+    <div>
+        <label class="lb1" for="gender">Gender</label>
+        <input type="radio" name="gender" id="g1male" value="male"> Male
+        <input type="radio" name="gender" id="g2female" value="female"> Female
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div>
+        <label for="tskills" class="lb2">Technical Skill</label>
+        <input type="checkbox" name="tskills" id="tskill1" value="Java">Java
+        <input type="checkbox" name="tskills" id="tskills2" value="C++">C++
+        <input type="checkbox" name="tskills" id="tskills3" value="Angular">Angular
+    </div>
+    <div>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="Srilanka">Srilanka</option>
+            <option value="USA" selected>USA</option>
+            <option value="China">China</option>
+        </select>
+    </div>
+    <button type="submit">Register Employee</button>
+    <button type="reset">Clear Form</button>
+    </form>
+
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<input type="text" #t_personName placeholder="Person Name">
+<input type="email" #t_email placeholder="Email">
+<input type="text" #t_city placeholder="City">
+
+<button (click)="readPerson(t_personName.value,t_email.value,t_city.value)">Show Person</button>
+
+<select [(ngModel)]="tableStyle">
+    <option value="table table-dark">Dark</option>
+    <option value="table table-light">Light</option>
+    <option value="table table-light table-striped">Light Striped</option>
+    <option value="table table-dark table-hover">Dark Hover</option>
+</select>
+<div *ngIf="personList.length!=0">
+    <h2 appStyle>Person Details</h2>
+    <table [ngClass]="tableStyle">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr  *ngFor="let person of personList">
+            
+            <!-- <td [ngStyle]="{'background-color': chooseBgColor(person.city)}">{{person.personName}}</td> -->
+            <td>{{person.personName}}</td>
+            <td>{{person.email}}</td>
+            <td>{{person.city}}</td>
+        </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+<div>
+    <input type="search" #t_personNameSearch placeholder="Input a name">
+    <button (click)="searchPerson(t_personNameSearch.value)">Search</button>
+</div>
+
+<div *ngIf="person">
+    {{person.personName}}
+    {{person.email}}
+    {{person.city}}
+</div>
+
+<p class="text-danger">{{errorMsg}}</p>

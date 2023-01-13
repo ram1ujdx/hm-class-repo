@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="my-script.js"></script>
+    
+</head>
+<body>
+    <button id="btn" onclick="fun()">Click Me</button>
+    <h1 id="ht"></h1>
+    <h2 id="bt"></h2>
+</body>
+<script>
+    function updateTime(){
+        let time=new Date().toTimeString();
+        document.getElementById('ht').innerHTML=time;
+    }
+   setInterval(()=>{
+    updateTime()
+   },1000)
+   setTimeout(()=>{
+    document.getElementById('btn').disabled=true;
+    //document.getElementById('bt').innerHTML='Lets go for a Break'
+   },10000)
+
+   setTimeout(()=>{
+    document.getElementById('btn').disabled=false;
+    //document.getElementById('bt').innerHTML='Lets go for a Break'
+   },1000)
+
+   setTimeout(()=>{
+    document.getElementById('bt').innerHTML='Breaks Over'
+   },15*60*1000)
+</script>
+</html>

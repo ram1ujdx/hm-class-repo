@@ -1,0 +1,154 @@
+2023-01-06 10:15:16.392  INFO 24879 --- [restartedMain] irlinesCouponDiscountsServiceApplication : Starting AirlinesCouponDiscountsServiceApplication using Java 17.0.3 on Ramanujs-MacBook-Pro.local with PID 24879 (/Users/ramanujdas/Documents/Training-Programs/happiest-minds/hm-class-repo/microservices-workspace/airlines-coupon-discounts-service/target/classes started by ramanujdas in /Users/ramanujdas/Documents/Training-Programs/happiest-minds/hm-class-repo/microservices-workspace/airlines-coupon-discounts-service)
+2023-01-06 10:15:16.395  INFO 24879 --- [restartedMain] irlinesCouponDiscountsServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2023-01-06 10:15:16.418  INFO 24879 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-06 10:15:16.418  INFO 24879 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-06 10:15:16.761  INFO 24879 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=866a7a17-0955-3c3e-a12c-1e4bb1e767c1
+2023-01-06 10:15:17.040  INFO 24879 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8200 (http)
+2023-01-06 10:15:17.046  INFO 24879 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-06 10:15:17.046  INFO 24879 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-06 10:15:17.092  INFO 24879 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-06 10:15:17.092  INFO 24879 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 674 ms
+2023-01-06 10:15:17.323  WARN 24879 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-01-06 10:15:17.353  INFO 24879 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-06 10:15:17.404  WARN 24879 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-06 10:15:17.443  INFO 24879 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-06 10:15:17.470  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-06 10:15:17.473  INFO 24879 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 10:15:17.489  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-06 10:15:17.489  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-06 10:15:17.489  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-06 10:15:17.489  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-06 10:15:17.489  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-06 10:15:17.489  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-06 10:15:17.489  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-06 10:15:17.644  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-06 10:15:17.647  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-06 10:15:17.651  INFO 24879 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-06 10:15:17.659  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672980317658 with initial instances count: 0
+2023-01-06 10:15:17.659  INFO 24879 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AIRLINES-COUPON-DISCOUNTS-SERVICE with eureka with status UP
+2023-01-06 10:15:17.659  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672980317659, current=UP, previous=STARTING]
+2023-01-06 10:15:17.660  INFO 24879 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200: registering service...
+2023-01-06 10:15:17.669  INFO 24879 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8200 (http) with context path ''
+2023-01-06 10:15:17.669  INFO 24879 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8200
+2023-01-06 10:15:17.681  INFO 24879 --- [restartedMain] irlinesCouponDiscountsServiceApplication : Started AirlinesCouponDiscountsServiceApplication in 1.481 seconds (JVM running for 1.874)
+2023-01-06 10:15:17.682  INFO 24879 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200 - registration status: 204
+2023-01-06 10:15:47.655  INFO 24879 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-06 10:15:47.656  INFO 24879 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-06 10:15:47.656  INFO 24879 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-06 10:15:47.656  INFO 24879 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-06 10:15:47.656  INFO 24879 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-06 10:15:47.656  INFO 24879 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2023-01-06 10:15:47.656  INFO 24879 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-06 10:15:47.670  INFO 24879 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-06 10:20:17.593  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 10:25:17.600  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 10:30:17.685  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 10:35:17.692  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 10:40:17.697  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 10:45:09.221  INFO 24879 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-01-06 10:45:09.225  INFO 24879 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AIRLINES-COUPON-DISCOUNTS-SERVICE with eureka with status DOWN
+2023-01-06 10:45:09.225  INFO 24879 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672982109225, current=DOWN, previous=UP]
+2023-01-06 10:45:09.225  INFO 24879 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200: registering service...
+2023-01-06 10:45:09.234  INFO 24879 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200 - registration status: 204
+2023-01-06 10:45:09.239  INFO 24879 --- [Thread-1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-06 10:45:09.257  INFO 24879 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-06 10:45:12.274  INFO 24879 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-06 10:45:12.279  INFO 24879 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200 - deregister  status: 200
+2023-01-06 10:45:12.316  INFO 24879 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2023-01-06 10:45:12.415  INFO 24879 --- [restartedMain] irlinesCouponDiscountsServiceApplication : Starting AirlinesCouponDiscountsServiceApplication using Java 17.0.3 on Ramanujs-MacBook-Pro.local with PID 24879 (/Users/ramanujdas/Documents/Training-Programs/happiest-minds/hm-class-repo/microservices-workspace/airlines-coupon-discounts-service/target/classes started by ramanujdas in /Users/ramanujdas/Documents/Training-Programs/happiest-minds/hm-class-repo/microservices-workspace/airlines-coupon-discounts-service)
+2023-01-06 10:45:12.415  INFO 24879 --- [restartedMain] irlinesCouponDiscountsServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2023-01-06 10:45:12.508  INFO 24879 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=866a7a17-0955-3c3e-a12c-1e4bb1e767c1
+2023-01-06 10:45:12.536  INFO 24879 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8200 (http)
+2023-01-06 10:45:12.536  INFO 24879 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-06 10:45:12.537  INFO 24879 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-06 10:45:12.545  INFO 24879 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-06 10:45:12.546  INFO 24879 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 129 ms
+2023-01-06 10:45:12.594  WARN 24879 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-01-06 10:45:12.608  INFO 24879 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-06 10:45:12.627  WARN 24879 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-06 10:45:12.638  INFO 24879 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-06 10:45:12.649  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-06 10:45:12.649  INFO 24879 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 10:45:12.659  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-01-06 10:45:12.659  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-01-06 10:45:12.659  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-01-06 10:45:12.659  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-01-06 10:45:12.659  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-01-06 10:45:12.659  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-01-06 10:45:12.659  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-01-06 10:45:12.669  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-01-06 10:45:12.672  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-06 10:45:12.674  INFO 24879 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-06 10:45:12.680  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1672982112680 with initial instances count: 4
+2023-01-06 10:45:12.680  INFO 24879 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AIRLINES-COUPON-DISCOUNTS-SERVICE with eureka with status UP
+2023-01-06 10:45:12.680  INFO 24879 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672982112680, current=UP, previous=STARTING]
+2023-01-06 10:45:12.681  INFO 24879 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200: registering service...
+2023-01-06 10:45:12.682  INFO 24879 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8200 (http) with context path ''
+2023-01-06 10:45:12.682  INFO 24879 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8200
+2023-01-06 10:45:12.686  INFO 24879 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200 - registration status: 204
+2023-01-06 10:45:12.688  INFO 24879 --- [restartedMain] irlinesCouponDiscountsServiceApplication : Started AirlinesCouponDiscountsServiceApplication in 0.345 seconds (JVM running for 1796.704)
+2023-01-06 10:45:12.689  INFO 24879 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-01-06 10:45:47.856  INFO 24879 --- [http-nio-8200-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-06 10:45:47.856  INFO 24879 --- [http-nio-8200-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-06 10:45:47.857  INFO 24879 --- [http-nio-8200-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-01-06 10:45:47.872  INFO 24879 --- [http-nio-8200-exec-1] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:45:50.068  INFO 24879 --- [http-nio-8200-exec-2] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:45:50.969  INFO 24879 --- [http-nio-8200-exec-3] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:45:54.444  INFO 24879 --- [http-nio-8200-exec-4] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:45:55.409  INFO 24879 --- [http-nio-8200-exec-5] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:45:59.210  INFO 24879 --- [http-nio-8200-exec-6] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:45:59.930  INFO 24879 --- [http-nio-8200-exec-7] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:46:06.119  INFO 24879 --- [http-nio-8200-exec-8] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:46:06.843  INFO 24879 --- [http-nio-8200-exec-9] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:46:07.715  INFO 24879 --- [http-nio-8200-exec-10] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:46:11.350  INFO 24879 --- [http-nio-8200-exec-1] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:46:18.025  INFO 24879 --- [http-nio-8200-exec-2] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:46:18.734  INFO 24879 --- [http-nio-8200-exec-3] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:47:28.222  INFO 24879 --- [http-nio-8200-exec-5] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:47:30.750  INFO 24879 --- [http-nio-8200-exec-6] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:47:31.825  INFO 24879 --- [http-nio-8200-exec-7] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:49:55.647  INFO 24879 --- [http-nio-8200-exec-9] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 10:50:12.666  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 10:55:12.751  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 11:00:12.761  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 11:05:12.830  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 11:49:28.919  INFO 24879 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200 - Re-registering apps/AIRLINES-COUPON-DISCOUNTS-SERVICE
+2023-01-06 11:49:28.920  INFO 24879 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200: registering service...
+2023-01-06 11:49:28.932  INFO 24879 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200 - registration status: 204
+2023-01-06 12:06:01.479  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 12:11:01.488  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 12:19:08.484  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 12:25:55.472  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 12:30:55.477  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 12:35:55.484  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 12:40:55.489  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 12:44:30.482  INFO 24879 --- [http-nio-8200-exec-1] c.h.a.a.c.CouponDiscountsController      : API Request made for a coupon with code c2001
+2023-01-06 12:45:55.499  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 12:50:55.505  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 12:55:55.510  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 13:10:19.468  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 13:15:19.483  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 13:20:19.489  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 13:25:19.501  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 13:34:33.914  INFO 24879 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200 - Re-registering apps/AIRLINES-COUPON-DISCOUNTS-SERVICE
+2023-01-06 13:34:33.916  INFO 24879 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200: registering service...
+2023-01-06 13:34:33.929  INFO 24879 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200 - registration status: 204
+2023-01-06 13:49:21.988  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 13:54:46.942  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 14:17:47.978  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 14:22:47.983  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 14:44:06.381  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 14:49:06.394  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 14:58:49.455  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 15:03:49.459  INFO 24879 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-06 15:15:44.481  INFO 24879 --- [RMI TCP Connection(175)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-01-06 15:15:44.483  INFO 24879 --- [RMI TCP Connection(175)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AIRLINES-COUPON-DISCOUNTS-SERVICE with eureka with status DOWN
+2023-01-06 15:15:44.483  INFO 24879 --- [RMI TCP Connection(175)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1672998344483, current=DOWN, previous=UP]
+2023-01-06 15:15:44.483  INFO 24879 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200: registering service...
+2023-01-06 15:15:44.486  INFO 24879 --- [RMI TCP Connection(175)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-06 15:15:44.486  INFO 24879 --- [RMI TCP Connection(175)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-01-06 15:15:44.487  INFO 24879 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200 - registration status: 204
+2023-01-06 15:15:44.490  INFO 24879 --- [RMI TCP Connection(175)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-01-06 15:15:47.507  INFO 24879 --- [RMI TCP Connection(175)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-01-06 15:15:47.511  INFO 24879 --- [RMI TCP Connection(175)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AIRLINES-COUPON-DISCOUNTS-SERVICE/192.168.129.24:airlines-coupon-discounts-service:8200 - deregister  status: 200
+2023-01-06 15:15:47.557  INFO 24879 --- [RMI TCP Connection(175)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

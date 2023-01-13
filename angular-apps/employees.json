@@ -1,0 +1,18 @@
+{
+  "employees": [
+    {
+      "employeeId": 1002,
+      "employeeName": "Karan Reddy",
+      "email": "karan@yahoo.com",
+      "salary": 52000,
+      "id": 1002
+    },
+    {
+      "employeeId": "10011",
+      "employeeName": "Gaurav Sharma",
+      "email": "gaurav@yahoo.com",
+      "salary": 45000,
+      "id": "10011"
+    }
+  ]
+}

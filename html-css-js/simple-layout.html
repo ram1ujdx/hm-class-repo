@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        header{
+            min-height: 150px;
+            background-color: darkslategray;
+        }
+        aside,article{
+            min-height: 400px;
+            display: inline-block;
+        }
+        aside{
+            background-color: aquamarine;
+            width: 30%;
+            float: left;
+        }
+        article{
+            background-color: darkolivegreen;
+            width: 70%;
+        }
+        footer{
+            min-height: 100px;
+            background-color: burlywood;
+        }
+
+        @media  (max-width : 1368px) {
+            aside,article{
+            width: 50%;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h1>Hello App</h1></header>
+        <aside><h2>Hello Everyone.. This is a simple Aside text</h2></aside>
+        <article></article>
+        <footer></footer>
+    </div>
+</body>
+</html>

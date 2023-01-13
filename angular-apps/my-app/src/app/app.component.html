@@ -1,0 +1,15 @@
+<h1 appStyle>Hello Everyone</h1>
+<div [ngSwitch]="today">
+    <p *ngSwitchCase="1">Good Morning.. Have a great Day</p>
+    <p *ngSwitchCase="6">Good Afternoon.. Have a great weekend</p>
+</div>
+<app-greet msg="Let's Learn Angular"></app-greet>
+<app-greet msg="Angular is Single Page Based"></app-greet>
+<!-- <input [(ngModel)]="username" type="text" #t_username>
+<button (click)="saySomething(t_username.value)" [disabled]="btnDisabled" class="btn btn-dark">Click Me</button>
+
+<H3>{{username}}</H3> -->
+
+<app-person></app-person>
+
+

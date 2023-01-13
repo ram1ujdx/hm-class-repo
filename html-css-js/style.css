@@ -1,0 +1,31 @@
+/* Element Selector */
+button{
+    background-color: darkcyan;
+}
+
+/* Class Selector */
+
+.lb1{
+    color: darkgreen;
+    text-align: center;
+}
+
+.lb2{
+    color: darkblue;
+    padding: 50px;
+}
+
+/* ID Selector */
+#employeeId{
+    background-color: aqua;
+}
+
+/* Universal Selector */
+*{
+    font-family: sans-serif;
+}
+
+/* Pseudo Selector */
+h2:hover{
+    background-color: cornflowerblue;
+}

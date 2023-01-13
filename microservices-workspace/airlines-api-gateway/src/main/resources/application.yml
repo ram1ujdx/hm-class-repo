@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: airlines-api-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: airlines-booking-service
+        uri:
+          lb://airlines-booking-service   
+        predicates:
+        - Path=/bookings/**  
+        
+      - id: airlines-info-service
+        uri:
+          lb://airlines-info-service   
+        predicates:
+        - Path=/flights/** 
+        
+      - id: airlines-coupon-discounts-service
+        uri:
+          lb://airlines-coupon-discounts-service
+        predicates:
+        - Path=/coupons/** 
+        
+      - id: airlines-auth-service
+        uri:
+          lb://airlines-auth-service
+        predicates:
+        - Path=/auth/** 
+        
+        
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+      globalcors:
+          cors-configurations: 
+            '[/**]':
+              allowed-origins: "*"
+              allowed-methods: "*"
+              allowed-headers: "*"
+
+        
+
+server:
+  port: 8888
+  
